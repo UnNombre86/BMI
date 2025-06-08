@@ -15,6 +15,8 @@ int main(void)
 
 	printf("\nSu Índice de masa corporal es: %0.1f\n", bmi);
 
+	printf("\nÍndice | Condición\n<18.5 | Bajo peso\n18.5-24.9 | Peso regular\n25-29.9 | Sobrepeso\n>=30 | Obesidad\n\n\n");
+
 	printf("Su condición es: ");
 	if(bmi < 18.5)
 		printf("Bajo peso\n");
@@ -27,7 +29,6 @@ int main(void)
 			else
 				printf("Obesidad\n");
 
-	printf("\nÍndice | Condición\n<18.5 | Bajo peso\n18.5-24.9 | Peso regular\n25-29.9 | Sobrepeso\n>=30 | Obesidad\n\n\n");
 
 	return(0);
 }
