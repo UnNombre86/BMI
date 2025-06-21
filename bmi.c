@@ -6,10 +6,22 @@ int main(void)
 	int weight;
 	float bmi;
 
+	do{
 	printf("\nIngrese su altura en centímetros: ");
 	scanf("%d", &height);
+
+	if(height < 0)
+		printf("No se admiten valores negativos");
+
+	} while (height < 0);
+	do{
 	printf("\nIngrese su peso en Kg: ");
 	scanf("%d", &weight);
+
+	if(weight < 0)
+		printf("No se admiten valores negativos");
+
+	} while (weight < 0);
 
 	bmi = weight/(height*height/10000.0);
 
